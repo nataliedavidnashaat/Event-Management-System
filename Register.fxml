@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane style="-fx-background-image: url(&quot;background2.jpeg&quot;); -fx-background-repeat: no-repeat; -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.RegisterController">
+   <center>
+      <Group>
+         <children>
+            <AnchorPane prefHeight="379.0" prefWidth="385.0" style="-fx-background-color: white; -fx-border-color: #0598ff;">
+               <children>
+                  <Label alignment="CENTER" layoutX="10.0" layoutY="46.0" prefHeight="22.0" prefWidth="453.0" text="Choose how do you want to sign up" textFill="#012379">
+                     <font>
+                        <Font name="Georgia" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="signUpAsOrganizerButton1" alignment="CENTER" layoutX="105.0" layoutY="307.0" mnemonicParsing="false" onAction="#signUpAsOrganizerButtonHandler" prefHeight="30.0" prefWidth="256.0" style="-fx-background-color: #012379;" text="Return To Main Menu" textFill="#fffafa">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <GridPane alignment="CENTER" layoutX="153.0" layoutY="104.0" prefHeight="171.0" prefWidth="167.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="signUpAsAttendeeButton" mnemonicParsing="false" onAction="#signUpAsAttendeeButtonHandler" prefHeight="28.0" prefWidth="175.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #012379;" text="Sign up as Attendee">
+                           <font>
+                              <Font name="Georgia" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="signUpAsOrganizerButton" mnemonicParsing="false" onAction="#signUpAsOrganizerButtonHandler" prefHeight="29.0" prefWidth="177.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #012379;" text="Sign up as Organizer" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Calibri Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="signUpAsAdminButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#signUpAsAdminButtonHandler" prefHeight="27.0" prefWidth="168.0" style="-fx-background-color: #ADD8E6; -fx-border-color: #012379;" text="Sign up as Admin" textAlignment="CENTER" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Calibri Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </Group>
+   </center>
+   <top>
+      <Pane prefHeight="100.0" prefWidth="486.0" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <Pane prefHeight="128.0" prefWidth="486.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

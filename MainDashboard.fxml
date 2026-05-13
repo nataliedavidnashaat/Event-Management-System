@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-image: url(&quot;background.jpeg&quot;); -fx-background-repeat: no-repeat; -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.MainDashboardController">
+   <center>
+      <Group>
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgba(255, 255, 255, 0.8);">
+               <children>
+                  <Group layoutX="18.0" layoutY="55.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="46.0" prefWidth="588.0" text="Welcome to Event Mangament" textAlignment="CENTER" textFill="#100d21" wrapText="true">
+                           <font>
+                              <Font name="Georgia Bold Italic" size="30.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="registerNewAccountButton" layoutX="127.0" layoutY="84.0" mnemonicParsing="false" onAction="#registerNewAccountButtonHandler" prefHeight="25.0" prefWidth="317.0" style="-fx-background-color: #87CEFA;" text="Register new account">
+                           <font>
+                              <Font name="Georgia" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="loginInButton" layoutX="127.0" layoutY="155.0" mnemonicParsing="false" onAction="#loginInButtonHandler" prefHeight="25.0" prefWidth="317.0" style="-fx-background-color: #87CEFA;" text="Login in">
+                           <font>
+                              <Font name="Georgia" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="exitButton" layoutX="207.0" layoutY="227.0" mnemonicParsing="false" onAction="#exitButtonHandler" prefHeight="34.0" prefWidth="174.0" style="-fx-background-color: #87CEFA; -fx-border-color: #012379;" text="Exit">
+                           <font>
+                              <Font name="Georgia" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Group>
+               </children>
+            </AnchorPane>
+         </children>
+      </Group>
+   </center>
+</BorderPane>

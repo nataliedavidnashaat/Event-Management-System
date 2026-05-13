@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-image: url('background.jpeg'); -fx-background-repeat: no-repeat; -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.SignUpAsAdminController">
+    <center>
+        <Group BorderPane.alignment="CENTER">
+            <children>
+                  <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="531.0" style="-fx-background-color: rgb(173, 216, 230, 0.89)">
+                      <children>
+                          <Label layoutX="190.0" layoutY="28.0" prefHeight="82.0" prefWidth="152.0" text="Create Account">
+                              <font>
+                                  <Font name="Georgia Bold" size="18.0" />
+                              </font>
+                          </Label>
+                          <GridPane layoutX="62.0" layoutY="128.0" prefHeight="145.0" prefWidth="408.0">
+                              <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              </columnConstraints>
+                              <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              </rowConstraints>
+                              <children>
+                                  <Label text="Username">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                                  <Label text="Password" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                                  <PasswordField fx:id="passwordTextFiled" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                  <TextField fx:id="usernameTextFiled" GridPane.columnIndex="1" />
+                                  <Label text="Date Of Birth" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Georgia" size="15.0" />
+                           </font>
+                        </Label>
+                                  <DatePicker fx:id="dateOfBirthDatePicker" prefHeight="25.0" prefWidth="216.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              </children>
+                          </GridPane>
+                      </children>
+                  </AnchorPane>
+            </children>
+        </Group>
+    </center>
+   <bottom>
+      <AnchorPane prefHeight="214.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+                    <Button fx:id="signUpAsAdminButton" layoutX="457.0" layoutY="30.0" mnemonicParsing="false" onAction="#signUpAsAdminButtonHandler" prefHeight="32.0" prefWidth="143.0" style="-fx-background-color: #0033A0;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Button>
+                    <Button fx:id="returnToMainMenuButton" layoutX="690.0" layoutY="30.0" mnemonicParsing="false" onAction="#returnToMainMenuButtonHandler" prefHeight="32.0" prefWidth="142.0" style="-fx-background-color: #0033A0;" text="Return To Main Menu" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <top>
+      <Pane prefHeight="148.0" prefWidth="1000.0" BorderPane.alignment="CENTER" />
+   </top>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

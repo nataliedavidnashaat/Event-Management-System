@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-image: url('background4.jpg'); -fx-background-repeat: no-repeat; -fx-background-size: cover;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.AttendeeInfoController">
+   <center>
+      <Group>
+         <children>
+            <AnchorPane layoutY="8.0" prefHeight="385.0" prefWidth="681.0">
+               <children>
+                  <Label layoutX="71.0" layoutY="126.0" prefHeight="40.0" prefWidth="150.0" text="Username : " textFill="LIGHTBLUE">
+                     <font>
+                        <Font name="Georgia" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Label1" layoutX="53.0" layoutY="16.0" prefHeight="43.0" prefWidth="198.0" textAlignment="JUSTIFY" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="70.0" layoutY="171.0" prefHeight="40.0" prefWidth="166.0" text="Date of Birth:" textFill="LIGHTBLUE">
+                     <font>
+                        <Font name="Georgia" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="71.0" layoutY="271.0" prefHeight="40.0" prefWidth="150.0" text="Wallet:" textFill="LIGHTBLUE">
+                     <font>
+                        <Font name="Georgia" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="272.0" layoutY="-30.0" prefHeight="134.0" prefWidth="171.0" text="'s Account" textFill="LIGHTBLUE">
+                     <font>
+                        <Font name="Georgia" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="70.0" layoutY="223.0" prefHeight="20.0" prefWidth="102.0" text="Gender:" textFill="LIGHTBLUE">
+                     <font>
+                        <Font name="Georgia" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Label2" layoutX="241.0" layoutY="131.0" prefHeight="20.0" prefWidth="150.0" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Label3" layoutX="237.0" layoutY="176.0" prefHeight="20.0" prefWidth="171.0" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Label4" layoutX="241.0" layoutY="223.0" prefHeight="20.0" prefWidth="182.0" textAlignment="JUSTIFY" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Label5" layoutX="182.0" layoutY="275.0" prefHeight="30.0" prefWidth="102.0" textAlignment="JUSTIFY" textFill="WHITE">
+                     <font>
+                        <Font name="Georgia" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="308.0" layoutY="275.0" text="\$" textFill="LIGHTBLUE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </Group>
+   </center>
+   <top>
+      <Pane prefHeight="140.0" prefWidth="1081.0" BorderPane.alignment="CENTER" />
+   </top>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="417.0" layoutY="27.0" mnemonicParsing="false" onAction="#returnToMainMenuHandler" prefHeight="32.0" prefWidth="230.0" style="-fx-background-color: #add8e6;" text="Return To Main Menu">
+               <font>
+                  <Font name="Georgia" size="18.0" />
+               </font>
+            </Button>
+         </children></Pane>
+   </bottom>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

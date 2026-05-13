@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.OrganizerDashboard01Controller">
+   <center>
+      <Group>
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="-8.0" layoutY="1.0" prefHeight="491.0" prefWidth="630.0">
+               <children>
+                  <Button fx:id="createEventButton" layoutX="32.0" layoutY="90.0" mnemonicParsing="false" onAction="#createEventButtonHandler" prefHeight="107.0" prefWidth="193.0" style="-fx-background-color: #5ca9e6;" text="Create Event" textFill="#1a1a1a">
+                     <font>
+                        <Font name="Georgia" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancelEventButton" layoutX="231.0" layoutY="91.0" mnemonicParsing="false" onAction="#cancelEventButtonHandler" prefHeight="107.0" prefWidth="198.0" style="-fx-background-color: #5ca9e6;" text="Cancel Event" textFill="#1a1a1a">
+                     <font>
+                        <Font name="Georgia" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="updateEventButton" layoutX="435.0" layoutY="90.0" mnemonicParsing="false" onAction="#updateEventButtonHandler" prefHeight="109.0" prefWidth="186.0" style="-fx-background-color: #5ca9e6;" text="Update an Event" textFill="#1a1a1a">
+                     <font>
+                        <Font name="Georgia" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="LogoutButton" layoutX="486.0" layoutY="436.0" mnemonicParsing="false" onAction="#LogoutButtonHandler" prefHeight="58.0" prefWidth="133.0" style="-fx-background-color: #89CFF0;" text="Logout">
+                     <font>
+                        <Font name="Georgia" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="checkWalletButton" layoutX="135.0" layoutY="305.0" mnemonicParsing="false" onAction="#checkWalletButtonHandler" prefHeight="75.0" prefWidth="362.0" style="-fx-background-color: #5ca9e6;" text="View Wallet" textFill="#1a1a1a">
+                     <font>
+                        <Font name="Georgia" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewMyEventsButton" layoutX="135.0" layoutY="222.0" mnemonicParsing="false" onAction="#viewMyEventsButtonHandler" prefHeight="73.0" prefWidth="364.0" style="-fx-background-color: #5ca9e6;" text="View my Events" textFill="#1a1a1a">
+                     <font>
+                        <Font name="Georgia" size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </Group>
+   </center>
+   <left>
+      <VBox prefHeight="495.0" prefWidth="305.0" style="-fx-background-image: url(&quot;background2.jpeg&quot;); -fx-background-repeat: no-repeat; -fx-background-size: cover;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="41.0" prefWidth="221.0" text="Organizer" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold Italic" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="23.0" top="40.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="52.0" prefWidth="244.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Georgia Bold Italic" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" left="23.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <Pane prefHeight="495.0" prefWidth="174.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
